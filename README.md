@@ -1,19 +1,19 @@
 chef-servers
 ============
 
-should install knife-solo
+should install `knife-solo`
 
     $ gem install knife-solo
     $ knife configure -r . --defaults
-
-
-    $ knife solo prepare ubuntu@ip
     
-    
-config your file `~/.ssh/config`
+config your ssh `~/.ssh/config`
 
     Host server
       Hostname <IP/domain>
-      
-    
-    $ knife solo cook 
+      User     <user>
+
+Then
+
+    $ knife solo prepare <server>
+    $ knife solo cook <server>
+
