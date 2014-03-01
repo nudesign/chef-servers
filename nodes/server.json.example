@@ -1,0 +1,8 @@
+{
+  "user": {
+    "name": "ubuntu",
+    "ls_color": true
+    },
+
+    "run_list":["recipe[main]"]
+}
